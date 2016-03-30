@@ -13,6 +13,7 @@ So I have addressed each of these issues in the config. If you push it to /stora
 
 ## Fixing samba
 Note: To push manual updates, you will need to use scp instead of samba to copy the tar files to /storage/.update/ - no big deal.
+
 1. I used a custom samba.conf which the openelec system reecognised, this basically comments out potentially troublesome samba shares that most people won't need anyway. I certainly don't.
 2. Next,from v5+, the NOOBS partitions get automounted. Why is a RECOVERY share accessible as a writable share over samba??? This was fixed by editing udev rules.
 
